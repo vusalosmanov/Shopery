@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*{
+    font-family: "Poppins", sans-serif;
+}
+
+.image1{
+    width: 853px;
+    height: 600px;
+    background-image: url(../assets/banner-lg-03.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+}
+
+.image2{
+    width: 424px;
+    height: 288px;
+    background-image: url(../assets/banner-sm-05.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.image3{
+    width: 424px;
+    height: 288px;
+    background-image: url(../assets/banner-sm-04.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.image4{
+    width: 424px;
+    height: 536px;
+    background-image: url(../assets/banner-sm-03.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.image5{
+    width: 424px;
+    height: 536px;
+    background-image: url(../assets/banner-sm-01.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.image6{
+    width: 424px;
+    height: 536px;
+    background-image: url(../assets/banner-sm-02.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
