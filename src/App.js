@@ -1,9 +1,8 @@
-import React from "react";
-import Shope from "./page/Shope";
+
 function App() {
+  const router=createBrowserRouter(ROUTER)
   return (
     <div className="App">
-      <Shope />
     </div>
   );
 }
