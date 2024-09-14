@@ -1,9 +1,5 @@
 @tailwind base;
 @tailwind components;
-<<<<<<< HEAD
-<<<<<<< HEAD
-@tailwind utilities;
-=======
 @tailwind utilities;
 
 .range-filter {
@@ -85,9 +81,6 @@
     }
   }
 }
->>>>>>> vusal
-=======
-@tailwind utilities;
 
 @layer base {
   * {
@@ -103,4 +96,3 @@
     margin: 0 auto;
   }
 }
->>>>>>> Aisel

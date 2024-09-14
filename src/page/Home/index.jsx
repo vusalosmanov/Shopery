@@ -3,7 +3,7 @@ import { FaInstagram, FaFacebookF, FaTwitter, FaPinterestP } from 'react-icons/f
 import { IoLogoInstagram } from 'react-icons/io5';
 import { Col, Row } from 'antd';
 
-const Home = () => {
+const Home2 = () => {
   return (
     <div>
       <section className='follow'>
@@ -69,4 +69,4 @@ const Home = () => {
   );
 }
 
-export default Home;
+export default Home2;
