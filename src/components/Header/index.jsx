@@ -231,12 +231,17 @@ const Header = () => {
           </div>
         </div>
 
+<<<<<<< HEAD
         <div className="header-end bg-neutral-800 text-slate-300 p-[15px] hidden lg:block ">
           <div className="container max-w-[1320px] mx-auto px-[10px] flex items-center justify-between">
+=======
+        <div className="header-end bg-neutral-800 text-slate-300 p-[15px]  lg:block ">
+          <div className="container flex items-center justify-between">
+>>>>>>> 8bcd7f845d1d080b5f21bc8ff6dd89c892fd8269
             <div className="menu">
               <ul className='flex gap-6'>
                 <li
-                  className="relative flex items-center justify-between gap-2 cursor-pointer"
+                  className="relative flex items-center justify-between gap-2 cursor-pointer z-10"
                   onMouseEnter={toggleHomeDropdown}
                   onMouseLeave={toggleHomeDropdown}
                   ref={homeDropdownRef}
@@ -249,7 +254,7 @@ const Header = () => {
                   </Link>
                 </li>
                 <li
-                  className='relative flex items-center cursor-pointer gap-2'
+                  className='relative flex items-center cursor-pointer gap-2 z-10'
                   onMouseEnter={toggleShopMenu}
                   onMouseLeave={toggleShopMenu}
                   ref={shopMenuRef}
@@ -262,7 +267,7 @@ const Header = () => {
                   </span>
                 </li>
                 <li
-                  className="relative flex items-center justify-between gap-2 cursor-pointer"
+                  className="relative flex items-center justify-between gap-2 cursor-pointer z-10"
                   onMouseEnter={togglePageMenu}
                   onMouseLeave={togglePageMenu}
                   ref={pageMenuRef}
@@ -279,6 +284,9 @@ const Header = () => {
                       <li className="py-1 text-zinc-500 px-4 hover:text-green-500 hover:bg-green-100  cursor-pointer">Order History</li>
                       <li className="py-1 text-zinc-500 px-4 hover:text-green-500 hover:bg-green-100  cursor-pointer">Order Details</li>
                       <li className="py-1 text-zinc-500 px-4 hover:text-green-500 hover:bg-green-100 -pointer">Account Settings</li>
+                      <li className="py-1 text-zinc-500 px-4 hover:text-green-500 hover:bg-green-100 -pointer">
+                        <Link className='' to="/productinfo">Product Details</Link>
+                      </li>
                       <li className="py-1 text-zinc-500 px-4 hover:text-green-500 hover:bg-green-100 cursor-pointer">WishList</li>
                       <li className="py-1 text-zinc-500 px-4 hover:text-green-500 hover:bg-green-100  cursor-pointer">Sign in</li>
                       <li className="py-1 text-zinc-500 px-4 hover:text-green-500 hover:bg-green-100  cursor-pointer">Create Account</li>
@@ -291,7 +299,7 @@ const Header = () => {
                   )} */}
                 </li>
                 <li
-                  className="relative flex items-center justify-between gap-2 cursor-pointer"
+                  className="relative flex items-center justify-between gap-2 cursor-pointer z-10"
                   onMouseEnter={toggleBlogMenu}
                   onMouseLeave={toggleBlogMenu}
                   ref={homeDropdownRef}
@@ -310,8 +318,8 @@ const Header = () => {
                     </ul>
                   )}
                 </li>
-                <li><Link className='flex items-center justify-between gap-2' to={"about"}>About Us</Link></li>
-                <li><Link className='flex items-center justify-between gap-2' to={"contact"}>Contact Us</Link></li>
+                <li><Link className='flex items-center justify-between gap-2' to="/about">About Us</Link></li>
+                <li><Link className='flex items-center justify-between gap-2' to="/contact">Contact Us</Link></li>
               </ul>
             </div>
             <div className="phone flex items-center gap-2">

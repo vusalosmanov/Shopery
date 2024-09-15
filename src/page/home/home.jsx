@@ -11,6 +11,8 @@ import Support from "../../assets/shopery.netlify.app (2).svg"
 import Payment from "../../assets/shopery.netlify.app (3).svg"
 import MoneyBack from "../../assets/shopery.netlify.app (4).svg"
 import Right from "../../assets/shopery.netlify.app (8).svg"
+import Header from "../../components/Header";
+import Footer from "../../components/Footer";
 
 
 const Home = () => {
@@ -37,6 +39,7 @@ const Home = () => {
 
   return (
     <>
+    <Header/>
     <div className="flex my-6 mx-0 box-border">
         <div className="flex w-100% px-0 mx-auto gap-8">
             <div className="image1">
@@ -155,6 +158,8 @@ const Home = () => {
                 </div>
             </div>
         </section>
+
+        <Footer/>
     </>
   );
 };
