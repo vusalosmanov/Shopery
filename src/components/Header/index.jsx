@@ -230,14 +230,9 @@ const Header = () => {
             </div>
           </div>
         </div>
-
-<<<<<<< HEAD
         <div className="header-end bg-neutral-800 text-slate-300 p-[15px] hidden lg:block ">
           <div className="container max-w-[1320px] mx-auto px-[10px] flex items-center justify-between">
-=======
-        <div className="header-end bg-neutral-800 text-slate-300 p-[15px]  lg:block ">
-          <div className="container flex items-center justify-between">
->>>>>>> 8bcd7f845d1d080b5f21bc8ff6dd89c892fd8269
+
             <div className="menu">
               <ul className='flex gap-6'>
                 <li
