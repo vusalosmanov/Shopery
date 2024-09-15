@@ -13,9 +13,6 @@ import MoneyBack from "../../assets/shopery.netlify.app (4).svg"
 import Right from "../../assets/shopery.netlify.app (8).svg"
 
 
-
-
-
 const Home = () => {
 
     const dispatch = useDispatch();
@@ -41,17 +38,17 @@ const Home = () => {
   return (
     <>
     <div className="flex my-6 mx-0 box-border">
-        <div className="flex w-100 px-0 mx-auto gap-8">
+        <div className="flex w-100% px-0 mx-auto gap-8">
             <div className="image1">
                 <div className="absolute box-border top-[165px] left-[65px] ">
-                    <h2 className="w-[70%] text-[48px] font-bold text-[white] ">Fresh & Healthy Organic Food</h2>
+                    <h2 className="max-w-[70%] text-[48px] font-bold text-[white] ">Fresh & Healthy Organic Food</h2>
 
                     <div className=" flex flex-col my-8 pl-3 border-l-2 border-l-[#84d187]">
                         <h5 className="mb-3 text-[white] text-[22px] font-semibold">Sale up to <span className="text-center px-3 py-1 bg-[#ff8a00] font-bold rounded-md box-border text-[20px] text-[#fff] ">30% OFF</span></h5>
                         <p className="text-[#cccccc] text-[14px] leading-5 font-semibold">Free shipping on all your order.</p>
                     </div>
 
-                    <button className="text-[#00b207] bg-[white] text-[14px] py-[14px] px-8 font-bold rounded-[43px] hover:opacity-90 ">Shop Now -> <img src="" alt="" /></button>
+                    <button className="text-[#00b207] bg-[white] text-[14px] py-[14px] px-8 font-bold rounded-[43px] hover:opacity-90 ">Shop Now - <img src="" alt="" /></button>
                 </div>
             </div>
             <div className="flex flex-col gap-6">
@@ -60,14 +57,14 @@ const Home = () => {
                         <h5 className="text-[#1a1a1a] my-2 uppercase text-[14px] font-semibold ">Summer Sale</h5>
                         <h2 className="text-[#1a1a1a] my-3 uppercase text-[32px] leading-6 font-semibold">75% OFF </h2>
                         <p className="text-[#666666] my-6 text-[14px] leading-4  font-medium">Only Fruit & Vegetable</p>
-                        <button className="text-[#00b207] bg-[none] text-[14px] py-[14px] font-bold rounded-[43px] hover:opacity-90 ">Shop Now -> <img src="" alt="" /></button>
+                        <button className="text-[#00b207] bg-[none] text-[14px] py-[14px] font-bold rounded-[43px] hover:opacity-90 ">Shop Now - <img src="" alt="" /></button>
                     </div>
                 </div>
                 <div className="image3">
                     <div className=" flex flex-col items-center justify-center  absolute top-[19%] text-center box-border">
                         <h5 className="uppercase mb-3 text-[white] text-[14px] font-semibold">Best Deal</h5>
                         <h2 className="capitalize mb-3 text-[white] text-[32px] font-semibold max-w-[72%]">Special Products Deal of the Month</h2>
-                        <button className="text-[#00b207] bg-[none] text-[14px] py-[14px] font-bold rounded-[43px] hover:opacity-90 ">Shop Now -> <img src="" alt="" /></button>
+                        <button className="text-[#00b207] bg-[none] text-[14px] py-[14px] font-bold rounded-[43px] hover:opacity-90 ">Shop Now - <img src="" alt="" /></button>
                     </div>
                 </div>
             </div>
@@ -135,7 +132,7 @@ const Home = () => {
                         <h5 className="uppercase mb-3 text-[white] text-[14px] font-semibold">Best Deal</h5>
                         <h2 className="capitalize mb-2 text-[white] text-[40px] font-semibold ">Sale of the Month</h2>
                         <h2 className="mb-3 text-[white] text-[20px] font-medium ">The countdown is finished!</h2>
-                        <button className="text-[#00b207] bg-[white] text-[14px] py-[14px] px-8 font-bold rounded-[43px] hover:opacity-90 ">Shop Now -> <img src="" alt="" /></button>
+                        <button className="text-[#00b207] bg-[white] text-[14px] py-[14px] px-8 font-bold rounded-[43px] hover:opacity-90 ">Shop Now - <img src="" alt="" /></button>
                     </div>
                 </div>
 
@@ -144,7 +141,7 @@ const Home = () => {
                             <h5 className="uppercase mb-3 text-[white] text-[14px] font-semibold">85% Fat Free</h5>
                             <h2 className="capitalize mb-2 text-[white] text-[40px] font-semibold ">Low-Fat Meat</h2>
                             <h2 className="mb-3 text-[white] text-[20px] font-medium ">Started at <span className="text-[#ff8a00] text-[20px] font-semibold ">$79.99</span></h2>
-                            <button className="text-[#00b207] bg-[white] text-[14px] py-[14px] px-8 font-bold rounded-[43px] hover:opacity-90 ">Shop Now -> <img src="" alt="" /></button>
+                            <button className="text-[#00b207] bg-[white] text-[14px] py-[14px] px-8 font-bold rounded-[43px] hover:opacity-90 ">Shop Now - <img src="" alt="" /></button>
                         </div>
                 </div>
 
@@ -153,7 +150,7 @@ const Home = () => {
                             <h5 className="uppercase mb-3 text-[#1a1a1a] text-[14px] font-semibold">Summer Sale</h5>
                             <h2 className="capitalize mb-2 text-[#1a1a1a] text-[40px] font-semibold ">100% Fresh Fruit</h2>
                             <h2 className="mb-3 text-[#1a1a1a] text-[20px] font-medium ">Up to <span className="text-[#fcc900] text-[18px] font-semibold py-1.5 px-3 ml-3 rounded-md bg-[#1a1a1a] ">64% OFF</span></h2>
-                            <button className="text-[#00b207] bg-[white] text-[14px] py-[14px] px-8 font-bold rounded-[43px] hover:opacity-90  ">Shop Now -> <img src="" alt="" /></button>
+                            <button className="text-[#00b207] bg-[white] text-[14px] py-[14px] px-8 font-bold rounded-[43px] hover:opacity-90  ">Shop Now - <img src="" alt="" /></button>
                         </div>
                 </div>
             </div>

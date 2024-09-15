@@ -9,8 +9,6 @@ import { Link } from 'react-router-dom';
 import { RxHamburgerMenu } from "react-icons/rx";
 import { IoMdClose } from "react-icons/io";
 
-
-
 const Header = () => {
   const [isLanguageMenuOpen, setIsLanguageMenuOpen] = useState(false);
   const [selectedLanguage, setSelectedLanguage] = useState('Eng');
@@ -101,8 +99,8 @@ const Header = () => {
     <div>
       <header className='header-one w-full'>
         <div className="header-top w-full flex items-center justify-between bg-neutral-800 text-slate-300 p-[15px]">
-          <div className="container flex items-center justify-between text-xs">
-          <div className="headerTopLeft flex items-center  hidden lg:flex">
+          <div className="container max-w-[1320px] mx-auto px-[10px] flex items-center justify-between text-xs">
+            <div className="headerTopLeft flex items-center  hidden lg:flex">
               <CiLocationOn className="mr-2 text-2xl" />
               <p>Store Location: Lincoln- 344, Illinois, Chicago, USA</p>
             </div>
@@ -191,7 +189,7 @@ const Header = () => {
         </div>
 
         <div className="header-center">
-          <div className="container">
+          <div className="container max-w-[1320px] mx-auto px-[10px]">
             <div className="shoper flex items-center justify-between py-4">
               <div className="shopLogo relative flex items-center">
                 <RxHamburgerMenu
@@ -234,7 +232,7 @@ const Header = () => {
         </div>
 
         <div className="header-end bg-neutral-800 text-slate-300 p-[15px] hidden lg:block ">
-          <div className="container flex items-center justify-between">
+          <div className="container max-w-[1320px] mx-auto px-[10px] flex items-center justify-between">
             <div className="menu">
               <ul className='flex gap-6'>
                 <li
@@ -243,20 +241,12 @@ const Header = () => {
                   onMouseLeave={toggleHomeDropdown}
                   ref={homeDropdownRef}
                 >
-                  <Link to={"#"} className='flex'>
+                  <Link to="/" className='flex'>
                     Home
                     <RiArrowDownSLine
                       className={`text-2xl transition-transform duration-300 ${isHomeDropdownOpen ? 'rotate-180' : ''}`}
                     />
                   </Link>
-                  {isHomeDropdownOpen && (
-                    <ul className="absolute left-0 top-full mt-1 bg-white text-black border border-gray-300 rounded shadow-lg p-2 w-48">
-                      <li className="py-1  text-zinc-500 px-4 hover:text-green-500 hover:bg-green-100  cursor-pointer"><Link to={"/"}>HomePage 01</Link></li>
-                      <li className="py-1  text-zinc-500 px-4 hover:text-green-500 hover:bg-green-100  cursor-pointer"><Link to={"home2"}>HomePage 02</Link></li>
-                      <li className="py-1  text-zinc-500 px-4 hover:text-green-500 hover:bg-green-100 cursor-pointer"><Link to={"home3"}>HomePage 03</Link></li>
-                      <li className="py-1  text-zinc-500 px-4 hover:text-green-500 hover:bg-green-100  cursor-pointer"><Link>HomePage 04</Link></li>
-                    </ul>
-                  )}
                 </li>
                 <li
                   className='relative flex items-center cursor-pointer gap-2'
@@ -264,26 +254,12 @@ const Header = () => {
                   onMouseLeave={toggleShopMenu}
                   ref={shopMenuRef}
                 >
-                  <Link to={""}>Shop</Link>
+                  <Link to={"shope"}>Shop</Link>
                   <span>
                     <RiArrowDownSLine
                       className={`text-2xl transition-transform duration-300 ${isShopMenuOpen ? 'rotate-180' : ''}`}
                     />
                   </span>
-                  {isShopMenuOpen && (
-                    <div
-                      className="absolute top-full left-0 bg-white text-black border border-gray-300 rounded shadow-lg mt-1"
-                    >
-                      <ul className="flex flex-col p-2">
-                        <li className='py-1  text-zinc-500 px-4 hover:text-green-500 hover:bg-green-100 cursor-pointer'>
-                          Shop01
-                        </li>
-                        <li className='py-1 text-zinc-500 px-4 hover:text-green-500 hover:bg-green-100 cursor-pointer'>
-                          Shop02
-                        </li>
-                      </ul>
-                    </div>
-                  )}
                 </li>
                 <li
                   className="relative flex items-center justify-between gap-2 cursor-pointer"
@@ -297,7 +273,7 @@ const Header = () => {
                       className={`text-2xl transition-transform duration-300 ${isPageMenuOpen ? 'rotate-180' : ''}`}
                     />
                   </Link>
-                  {isPageMenuOpen && (
+                  {/* {isPageMenuOpen && (
                     <ul className="absolute left-0 top-full mt-1 bg-white text-black border border-gray-300 rounded shadow-lg p-2 w-48">
                       <li className="py-1 text-zinc-500 px-4 hover:text-green-500 hover:bg-green-100 cursor-pointer">User DashBoard</li>
                       <li className="py-1 text-zinc-500 px-4 hover:text-green-500 hover:bg-green-100  cursor-pointer">Order History</li>
@@ -312,7 +288,7 @@ const Header = () => {
 
 
                     </ul>
-                  )}
+                  )} */}
                 </li>
                 <li
                   className="relative flex items-center justify-between gap-2 cursor-pointer"
@@ -327,7 +303,7 @@ const Header = () => {
                     />
                   </Link>
                   {isBlogMenuOpen && (
-                    <ul className="absolute left-0 top-full mt-1 bg-white text-black border border-gray-300 rounded shadow-lg p-2 w-48">
+                    <ul className="absolute left-0 top-full mt-1 bg-white text-black border border-gray-300 rounded shadow-lg p-2 w-48 z-[99]">
                       <li className="py-1  text-zinc-500 px-4 hover:text-green-500 hover:bg-green-100  cursor-pointer">Blog List</li>
                       <li className="py-1  text-zinc-500 px-4 hover:text-green-500 hover:bg-green-100  cursor-pointer">Single</li>
 
@@ -447,13 +423,13 @@ const Header = () => {
               </ul>
 
               <div className='dianne flex gap-3 pt-4 mt-60'>
-              <div className='photo'>
-              <img src="https://shopery.netlify.app/main/src/images/user/img-03.png" alt="" />
-              </div>
-              <div className='dianne'>
-                <p className='font-semibold'>Dianne Russel</p>
-                <span className='text-stone-500'>dianne.russel@gmail.com</span>
-              </div>
+                <div className='photo'>
+                  <img src="https://shopery.netlify.app/main/src/images/user/img-03.png" alt="" />
+                </div>
+                <div className='dianne'>
+                  <p className='font-semibold'>Dianne Russel</p>
+                  <span className='text-stone-500'>dianne.russel@gmail.com</span>
+                </div>
               </div>
             </div>
           </div>

@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
-import ProductCart from '../components/ProductCart';
-import Banner from '../assets/image/banner/breedcrumb.jpg';
-import { allcategoriesArray } from '../data/AllCategories';
-import { ratingArray } from '../data/Rating';
-import { popularTagArray } from '../data/PopularTag';
+import ProductCart from '../../components/ProductCart';
+import Banner from '../../assets/image/banner/breedcrumb.jpg';
+import { allcategoriesArray } from '../../data/AllCategories';
+import { ratingArray } from '../../data/Rating';
+import { popularTagArray } from '../../data/PopularTag';
 import { FaChevronDown, FaChevronUp } from 'react-icons/fa';
 import { IoFilter } from 'react-icons/io5';
-import Bannerr from '../assets/image/banner/banner-sm-19.jpg';
+import Bannerr from '../../assets/image/banner/banner-sm-19.jpg';
 
 const Shope = () => {
   const [isOpenCategories, setIsOpenCategories] = useState(false);
